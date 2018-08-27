@@ -1,0 +1,17 @@
+html 
+{
+	/* Set background color */
+	background-color: rgb(255, 255, 255) !important;
+	background-image: none !important;
+}
+
+.window, div, canvas
+{
+	/* Remove shadows */
+	-webkit-box-shadow: none !important;
+	box-shadow: none !important;
+	
+	/* Remove round corners */
+	-webkit-border-radius: 0px !important;
+	border-radius: 0px !important;
+}

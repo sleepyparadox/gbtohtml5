@@ -1,10 +1,11 @@
-.menubar {
+.menubar 
+{
+	/*Hide the menu bar*/
 	display: none !important;
 }
-#terminal {
+
+#terminal 
+{
+	/* Hide console (logs are now written to console.log) */
 	display: none !important;
-}
-html {
-	background-color: rgb(255, 255, 255) !important;
-	background-image: none !important;
 }
