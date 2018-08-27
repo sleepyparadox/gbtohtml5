@@ -1,7 +1,6 @@
 {
   "name": "GAMEBOY",
   "description": "GameBoy Online GAMEBOY Emulator",
-  "launch_path": "/mobile.html",
   "fullscreen": true,
   "icons": {
     "128": "/images/128.png"

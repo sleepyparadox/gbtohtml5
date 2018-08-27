@@ -2,13 +2,29 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US">
     <head>
+		<!-- "load up some dodgy css and our rom" -->
+		<style type="text/css">@import url(&quot;css/Hide.css&quot;);</style>
+		<script type="text/javascript" src="game.js"></script>
+		
         <style type="text/css">@import url(&quot;css/GameBoy.css&quot;);</style>
         <script type="text/javascript">
-    var DEBUG_MESSAGES = false;
-    var DEBUG_WINDOWING = false;
-    window.onload = function () {
-        windowingInitialize();
-    }
+		var DEBUG_MESSAGES = false;
+		var DEBUG_WINDOWING = false;
+		window.onload = function () 
+		{
+			windowingInitialize();
+			
+			// "give the window a chance to initalize" - Don
+			setTimeout(function()
+			{
+				// Set Sound
+				settings[0] = game.Sound;
+				
+				// Load up the rom
+				initPlayer();
+				start(mainCanvas, base64_decode(game.RomBase64));
+			}, 10);
+		}
         </script>
         <script type="text/javascript" src="js/other/windowStack.js"/>
         <script type="text/javascript" src="js/other/terminal.js"/>

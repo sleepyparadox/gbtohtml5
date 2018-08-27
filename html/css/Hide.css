@@ -1,0 +1,10 @@
+.menubar {
+	display: none !important;
+}
+#terminal {
+	display: none !important;
+}
+html {
+	background-color: rgb(0, 0, 0) !important;
+	background-image: none !important;
+}
